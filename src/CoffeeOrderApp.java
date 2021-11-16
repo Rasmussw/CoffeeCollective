@@ -1,4 +1,5 @@
 import products.*;
+import statistics.CoffeeTypeCounter;
 import ui.*;
 
 public class CoffeeOrderApp {
@@ -21,26 +22,31 @@ public class CoffeeOrderApp {
             switch(userInput)
             {
                 case 1:
+                    CoffeeTypeCounter.oneAmericanoSold();
                     currentCustomer.addToAmericano(new Americano());
                     System.out.println("added a americano");
                     break;
 
                 case 2:
+                    CoffeeTypeCounter.oneEspressoSold();
                     currentCustomer.addToEspresso(new Espresso());
                     System.out.println("added a espresso");
                     break;
 
                 case 3:
+                    CoffeeTypeCounter.oneTeaSold();
                     currentCustomer.addToTea(new Tea());
                     System.out.println("added a Tea");
                     break;
 
                 case 4:
+                    CoffeeTypeCounter.oneCroissantSold();
                     currentCustomer.addToCroissant(new Croissant());
                     System.out.println("added a croissant");
                     break;
 
                 case 5:
+                    CoffeeTypeCounter.oneBaguetteSold();
                     currentCustomer.addToBaguette(new Baguette());
                     System.out.println("added a baguette");
                     break;
@@ -51,10 +57,10 @@ public class CoffeeOrderApp {
 
                     if(statisticsMenu.receiveUserInput() == 1){
                         statisticsMenu.displayDrinksStatistics();
+
                     }else if (statisticsMenu.receiveUserInput() == 2){
                         statisticsMenu.displayFoodStatistics();
                     }
-
                     break;
             }
         }
