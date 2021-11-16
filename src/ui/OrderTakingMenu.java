@@ -21,6 +21,7 @@ public class OrderTakingMenu {
         System.out.println("3. Tea");
         System.out.println("4. Croissant");
         System.out.println("5. Baguette");
+        System.out.println("6. statestic");
         System.out.println("9. Quit");
     }
 }
