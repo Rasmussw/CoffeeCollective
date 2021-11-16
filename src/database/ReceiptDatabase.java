@@ -1,5 +1,6 @@
 package database;
 
-public class ReceiptDatabase {
+public class ReceiptDatabase
+{
     /*TODO IMPLEMENT DATABASE*/
 }

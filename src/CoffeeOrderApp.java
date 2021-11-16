@@ -25,10 +25,10 @@ public class CoffeeOrderApp {
                     System.out.println("added a croissant");
                     break;
                 case 4:
-                    currentCustomer.addToBaguette(new Baguette());
+                    currentCustomer.addToCroissant(new Croissant());
                     break;
                 case 5:
-                    currentCustomer.addToCroissant(new Croissant());
+                    currentCustomer.addToBaguette(new Baguette());
                     break;
                 case 6:
                     statisticsMenu.printStatisticsChoice();
