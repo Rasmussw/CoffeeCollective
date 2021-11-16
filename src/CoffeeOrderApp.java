@@ -37,7 +37,14 @@ public class CoffeeOrderApp {
                     break;
                 case 6:
                     statisticsMenu.printStatisticsChoice();
-                    statisticsMenu.receiveUserInput();
+                    //statisticsMenu.receiveUserInput();
+
+                    if(statisticsMenu.receiveUserInput() == 1){
+                        statisticsMenu.displayCoffeeStatistics();
+                    }else if (statisticsMenu.receiveUserInput() == 2){
+                        statisticsMenu.displayFoodStatistics();
+                    }
+
                     break;
             }
         }while(userInput != 9);
