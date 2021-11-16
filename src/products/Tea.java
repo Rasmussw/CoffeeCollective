@@ -1,14 +1,17 @@
 package products;
 
-public class Tea {
+public class Tea
+{
     private String title = "Tea";
     private int price = 60;
 
-    public String getTitle() {
+    public String getTitle()
+    {
         return title;
     }
 
-    public int getPrice() {
+    public int getPrice()
+    {
         return price;
     }
 }

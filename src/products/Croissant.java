@@ -1,19 +1,33 @@
 package products;
 
-public class Croissant {
-    private String title;
-    private int price;
+public class Croissant
+{
+    private String croissantTitle = "Croissant";
+    private int croissantPrice = 20;
 
-    public Croissant(){
-        this.title = new Baguette().getTitle();
-        this.price = new Baguette().getCroissantPrice();
+    public Croissant()
+    {
+        this.croissantTitle = new Croissant().getTitle();
+        this.croissantPrice = new Croissant().getCroissantPrice();
     }
 
-    public String getTitle() {
-        return title;
+    public String getCroissantTitle()
+    {
+        return croissantTitle;
     }
 
-    public int getPrice() {
-        return price;
+    public int getCroissantPrice()
+    {
+        return croissantPrice;
+    }
+
+    public String getTitle()
+    {
+        return croissantTitle;
+    }
+
+    public int getPrice()
+    {
+        return croissantPrice;
     }
 }

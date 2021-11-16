@@ -1,14 +1,17 @@
 package products;
 
-public class Espresso {
+public class Espresso
+{
     private String title = "Espresso";
     private int price = 40;
 
-    public String getTitle() {
+    public String getTitle()
+    {
         return title;
     }
 
-    public int getPrice() {
+    public int getPrice()
+    {
         return price;
     }
 }

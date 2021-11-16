@@ -1,14 +1,17 @@
 package products;
 
-public class Americano {
+public class Americano
+{
     private String title = "Americano";
     private int price = 15;
 
-    public String getTitle() {
+    public String getTitle()
+    {
         return title;
     }
 
-    public int getPrice() {
+    public int getPrice()
+    {
         return price;
     }
 }
