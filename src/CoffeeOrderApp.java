@@ -1,7 +1,5 @@
 import products.*;
-import ui.Menu;
-import ui.OrderTakingMenu;
-import ui.StatisticsMenu;
+import ui.*;
 
 public class CoffeeOrderApp {
     public static void main(String[] args) {
